@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <!--Trang Chu-->
+        <LinearLayout
+            android:id="@+id/trangChu_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/trangChu_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="@string/trangChu_title"
+                android:textSize="26sp"
+                android:textColor="@color/textTitleColor"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/avatar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="220dp"
+                android:background="@drawable/picture_avatar"
+                android:contentDescription="@string/todo"
+                android:padding="3dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/avatar"
+                tools:ignore="TouchTargetSizeCheck" />
+        </LinearLayout>
+
+        <!-- For SliderAdapter -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/slider1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/slider_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/transparentColor"
+                app:tabBackground="@drawable/slider_indicator"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:layout_gravity="bottom">
+            </com.google.android.material.tabs.TabLayout>
+        </FrameLayout>
+
+        <!--Dang Chu Y-->
+        <LinearLayout
+            android:id="@+id/dangChuY_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/dangChuY_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="@string/dangChuY_title"
+                android:textSize="25sp"
+                android:textColor="@color/textTitleColor"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+
+        <!-- For SliderMoveAdapter -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/slider2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <!--The Loai-->
+        <LinearLayout
+            android:id="@+id/theLoai_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/theLoai_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="@string/th_lo_i"
+                android:textSize="25sp"
+                android:textColor="@color/textTitleColor"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+        <!--List The Loai-->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="always"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Love Song -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/loveSong"
+                    android:layout_width="160dp"
+                    android:layout_height="0.5in"
+                    android:layout_marginEnd="19dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="#FBA6A6">
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/lovesong"
+                        android:layout_marginStart="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="50dp"
+                        android:text="Love Song"
+                        android:textColor="#F0D61010"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,TextContrastCheck">
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Nhac Sad Songs -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/sadSong"
+                    android:layout_width="160dp"
+                    android:layout_height="0.5in"
+                    android:layout_marginEnd="19dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="#D5A8C1">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/sadsong" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sad Song"
+                        android:textColor="#F08C2F2F"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="50dp"
+                        tools:ignore="HardcodedText">
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Nhac Party Songs -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/partySong"
+                    android:layout_width="160dp"
+                    android:layout_height="0.5in"
+                    android:layout_marginEnd="19dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="#D8CCA6">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/partysong"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Party Song"
+                        android:textColor="#F0C34F95"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="50dp"
+                        tools:ignore="HardcodedText">
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Nhac Birthday Songs -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/birthdaySong"
+                    android:layout_width="160dp"
+                    android:layout_height="0.5in"
+                    android:layout_marginEnd="19dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="#D6BEBD">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/birthdaysong"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Birthday Song"
+                        android:textColor="#C8D6749B"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="50dp"
+                        tools:ignore="HardcodedText">
+                    </TextView>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Nhac Rap Song -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/rapSong"
+                    android:layout_width="160dp"
+                    android:layout_height="0.5in"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="5dp"
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="#B7C9DD">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/rapsong"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rap Song"
+                        android:textColor="#5BAAD5"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="50dp"
+                        tools:ignore="HardcodedText">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="0dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    >
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:contentDescription="@string/todo"
+                        android:background="@drawable/xemtatca_item"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/right"
+                        android:padding="9dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Xem tất cả"
+                        android:textColor="#706A6A"
+                        android:gravity="center"
+                        android:textSize="11sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        tools:ignore="HardcodedText">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!--Album-->
+        <LinearLayout
+            android:id="@+id/album_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/album_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="@string/album"
+                android:textSize="25sp"
+                android:textColor="@color/textTitleColor"
+                android:textStyle="bold">
+            </TextView>
+        </LinearLayout>
+
+        <!--List Album-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAlbum"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:padding="5dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"/>
+
+
+        <!--Bang Xep Hang-->
+        <LinearLayout
+            android:id="@+id/bxh_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/bxh_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:text="Bảng xếp hạng"
+                android:textColor="@color/textTitleColor"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck">
+            </TextView>
+        </LinearLayout>
+        <!--List Bang Xep Hang-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="440dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="13dp"
+                app:cardElevation="5dp"
+                tools:ignore="InOrMmUsage"
+                app:cardBackgroundColor="#000000">
+
+                <LinearLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/gradient_backgroundz">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/gradient_background">
+                    <TextView
+                        android:id="@+id/forYou"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#4you"
+                        android:textSize="20sp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginLeft="10dp">
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="110dp"
+                    android:background="@drawable/gradient_backgrounds">
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="190dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/musictop"/>
+
+                <GridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="20dp">
+                </GridView>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="40dp"
+            android:text=""
+            >
+        </TextView>
+
+
+
+    </LinearLayout>
+</ScrollView>

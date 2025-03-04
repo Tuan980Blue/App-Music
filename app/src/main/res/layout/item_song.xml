@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_marginBottom="7dp"
+    android:gravity="center"
+    android:padding="2dp">
+
+    <!-- Hình ảnh bìa album (nếu có) -->
+    <ImageView
+        android:id="@+id/avatarSongad"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/a"
+        android:scaleType="centerCrop" />
+
+    <!-- Thông tin về bài hát -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="8dp">
+
+        <TextView
+            android:id="@+id/songTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Song Title"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/songArtist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artist"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/songCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:textSize="13sp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <!-- Button để phát bài hát -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="#ED3E8D"/>
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Delete"
+            android:gravity="center"
+            android:textColor="#E81616"
+            android:backgroundTint="#19CAE4"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</LinearLayout>

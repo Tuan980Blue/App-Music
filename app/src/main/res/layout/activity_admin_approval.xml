@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/back"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request Admin"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#56A4BA"
+        android:padding="6dp"
+        android:layout_gravity="center"/>
+
+    <!-- Danh sách yêu cầu đăng ký Admin -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_admin_requests"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"/>
+
+    <!-- Nút phê duyệt và từ chối -->
+
+
+</LinearLayout>

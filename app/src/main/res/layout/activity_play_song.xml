@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/music_background"
+    android:orientation="vertical"
+    tools:context=".Activity.PlaySongActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/backActivit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/backactivity"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="center_vertical"
+            app:tint="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="155dp">
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="PHÁT TỪ"
+                android:textSize="10dp"
+                android:textColor="#DADADA"
+                android:layout_marginLeft="6dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thể loại"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="15dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="340dp"
+        android:elevation="400dp"
+        app:cardCornerRadius="1000dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="80dp">
+
+        <ImageView
+            android:id="@+id/avatarsong"
+            android:layout_width="340dp"
+            android:layout_height="340dp"
+            android:contentDescription="todo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/drinking"
+            android:animation="@anim/rotate_anim" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+            <TextView
+                android:id="@+id/nameSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên Bài Hát"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/nameCasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên ca sĩ"
+                android:textSize="15dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/timSong"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/timsong"
+            android:layout_gravity="center"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginRight="160dp"/>
+
+        <ImageView
+            android:id="@+id/turnloa"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/turnloa"
+            android:layout_gravity="center"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:id="@+id/currentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:progressTint="#FFFFFF"
+                android:thumbTint="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/totalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:text="00:00"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shufflemusic_svg_image"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:id="@+id/backSong"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/backmusic_svg_image"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/playSong"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="center"
+                app:srcCompat="@drawable/playmusic_svg_image"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/skipSong"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/skipmusic_svg_image"
+                android:background="@android:color/transparent"/>
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/replymusic_svg_image"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

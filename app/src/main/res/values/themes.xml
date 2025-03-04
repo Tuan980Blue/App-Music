@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MusicApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/lightBlue</item>
+        <item name="colorPrimaryVariant">@color/lightBlue</item>
+    </style>
+
+    <style name="Theme.MusicApp" parent="Base.Theme.MusicApp" />
+
+    <style name="SplashTheme" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/lightBlue</item>
+        <item name="colorPrimaryVariant">@color/lightBlue</item>
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+</resources>

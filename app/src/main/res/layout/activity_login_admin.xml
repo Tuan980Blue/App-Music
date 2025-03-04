@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/backAdmin"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/baseline_arrow_left_24">
+    </TextView>
+
+    <TextView
+        android:id="@+id/loginadmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login Admin"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="160dp"
+        android:textStyle="bold"
+        android:layout_gravity="center">
+    </TextView>
+
+    <EditText
+        android:id="@+id/emailAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:layout_marginTop="40dp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/passwordAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/key"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:layout_marginTop="20dp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <TextView
+        android:id="@+id/moveRegisterAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng kí ->"
+        android:padding="7dp"
+        android:textColor="#686165"
+        android:background="@drawable/custom_edittext"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="280dp">
+    </TextView>
+
+    <Button
+        android:id="@+id/loginAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Login"
+        android:textColor="#000000"
+        android:background="@drawable/border_radius_picture"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.RegisterActivity"
+    android:background="@drawable/background_login"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/form_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp"
+            android:background="@drawable/custom_edittext">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Up"
+                    android:textSize="36sp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#1FB3DF"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/edt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:hint="User name"
+                    android:inputType="text"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableStart="@drawable/user"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:layout_marginTop="40dp"
+                    tools:ignore="Autofill,HardcodedText" />
+
+                <EditText
+                    android:id="@+id/edt_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/custom_edittext"
+                    android:drawableStart="@drawable/baseline_email_24"
+                    android:drawablePadding="8dp"
+                    android:padding="8dp"
+                    android:textColor="@color/black"
+                    android:textColorHighlight="@color/cardview_dark_background"
+                    android:layout_marginTop="20dp"
+                    tools:ignore="Autofill,HardcodedText" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableStart="@drawable/key"
+                        android:drawablePadding="8dp"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/cardview_dark_background"
+                        android:layout_marginTop="20dp"
+                        tools:ignore="Autofill,HardcodedText" />
+                    <ImageView
+                        android:id="@+id/showPassword"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="23dp"
+                        android:src="@drawable/icon_eyes" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <EditText
+                        android:id="@+id/edt_confirmPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:ems="10"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:background="@drawable/custom_edittext"
+                        android:drawableStart="@drawable/key"
+                        android:drawablePadding="8dp"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="@color/cardview_dark_background"
+                        android:layout_marginTop="20dp"
+                        tools:ignore="Autofill,HardcodedText" />
+                    <ImageView
+                        android:id="@+id/showCfPassword"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="23dp"
+                        android:src="@drawable/icon_eyes" />
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/btn_CreateAcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Sign in"
+                    android:textSize="18sp"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="#1FB3DF"
+                    tools:ignore="HardcodedText">
+                </Button>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginEnd="3dp"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:text="Bạn đã có tài khoản !"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingEnd="5dp"
+            tools:ignore="HardcodedText,RtlSymmetry" />
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4"
+            android:text="Đăng nhập"
+            android:textAlignment="center"
+            android:textColor="#436575"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+</LinearLayout>

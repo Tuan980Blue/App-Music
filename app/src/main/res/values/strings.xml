@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="playlist_name">PlayList Name</string>
+    <string name="dangChuY_title">Đáng chú ý</string>
+    <string name="trangChu_title">Trang chủ</string>
+    <string name="trang_ch">Trang chủ</string>
+    <string name="th_vi_n">Thư viện</string>
+    <string name="c_nh_n">Cá nhân</string>
+    <string name="d_ch_v">Dịch vụ</string>
+    <string name="t_m_ki_m">Tìm kiếm</string>
+    <string name="th_lo_i">Thể loại</string>
+    <string name="album">Album</string>
+    <string name="top_100">Top 100</string>
+</resources>

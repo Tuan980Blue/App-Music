@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "725914353205",
+    "project_id": "zingmp3-18356",
+    "storage_bucket": "zingmp3-18356.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725914353205:android:1ae776fcc1ae295b6dbb7c",
+        "android_client_info": {
+          "package_name": "com.example.musicapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH2o4s9HSHZJ1mcQDsp2DgX5b_o02TzC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:725914353205:android:690db6f686cb6d7d6dbb7c",
+        "android_client_info": {
+          "package_name": "com.example.zingmp3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDH2o4s9HSHZJ1mcQDsp2DgX5b_o02TzC4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

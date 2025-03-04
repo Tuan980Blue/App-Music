@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:weightSum="3"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ten_bai_hat"
+        android:text="Tên bài hát"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:layout_weight="1.75"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="HardcodedText"
+        android:textColor="@android:color/holo_red_light"
+        tools:targetApi="ice_cream_sandwich" />
+
+    <TextView
+        android:layout_marginStart="16dp"
+        android:id="@+id/sum_time"
+        android:text="time"
+        android:textSize="15sp"
+        android:fontFamily="serif"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        tools:ignore="HardcodedText" />
+
+</LinearLayout>

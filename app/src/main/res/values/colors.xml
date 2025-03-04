@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparentColor">#00ff0000</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#777777</color>
+    <color name="white">#F0FFFFFF</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="green">#8BC34A</color>
+    <color name="purple">#9C27B0</color>
+    <color name="blue">#2196F3</color>
+    <color name="red">#F44336</color>
+    <color name="splash">#ffffff</color>
+    <color name="lightBlue">#6AB8F4</color>
+    <color name="textTitleColor">#CC000000</color>
+    <color name="forYou1">#91B5D3</color>
+    <color name="forYou2">#B39CFFB2</color>
+    <color name="forYou3">#67B0EA</color>
+    <color name="forYou4">#3E6585</color>
+</resources>

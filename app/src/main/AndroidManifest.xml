@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/wepik_black_and_pink_design_logo_20240109140839ca1x"
+        android:roundIcon="@drawable/wepik_black_and_pink_design_logo_20240109140839ca1x"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MusicApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.SingerSongsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.HeartSongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ThanhToanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EditSongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AdminApprovalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.EditAvatarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RegisterAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ListSongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.InfoAccountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.TheLoaiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.CategorySongsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.PlaySongActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

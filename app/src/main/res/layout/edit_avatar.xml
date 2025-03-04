@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/back"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="100dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/avt"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/changeAvatar"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Đổi ảnh"
+                android:textSize="19sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#309EF6"
+                tools:ignore="HardcodedText">
+            </Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+            </TextView>
+
+            <Button
+                android:id="@+id/saveAvatar"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:text="Lưu"
+                android:textSize="19sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#309EF6"
+                tools:ignore="HardcodedText">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/splash"/>
+        </shape>
+    </item>
+    <item android:gravity="center" android:height="200dp" android:width="190dp">
+        <inset  android:drawable="@drawable/wepik_black_and_pink_design_logo_20240109140839ca1x"/>
+    </item>
+
+</layer-list>

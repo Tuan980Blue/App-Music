@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/registeradmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register Admin"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:layout_marginTop="110dp"
+        android:textStyle="bold"
+        android:layout_gravity="center">
+    </TextView>
+
+    <EditText
+        android:id="@+id/userAdminRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/user"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:layout_marginTop="40dp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/emailAdminRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:layout_marginTop="20dp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/passwordAdminRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/key"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:layout_marginTop="20dp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <EditText
+        android:id="@+id/cfpasswordAdminRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:background="@drawable/custom_edittext"
+        android:drawableStart="@drawable/key"
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:layout_marginTop="20dp"
+        tools:ignore="Autofill,HardcodedText" />
+
+    <TextView
+        android:id="@+id/moveLoginAdmin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_edittext"
+        android:padding="7dp"
+        android:layout_marginLeft="20dp"
+        android:text="&lt;- Đăng nhập"
+        android:textColor="#686165">
+    </TextView>
+
+    <Button
+        android:id="@+id/registerAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/border_radius_picture"
+        android:text="Sign in"
+        android:textColor="#000000"
+        tools:ignore="TouchTargetSizeCheck">
+
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<!-- res/layout/song_category.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="140dp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingRight="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:elevation="1dp"
+        app:cardCornerRadius="5dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/avatarSinger"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="todo"
+                android:scaleType="fitCenter"
+                android:src="@drawable/avatarsinger" />
+
+            <TextView
+                android:id="@+id/textSinger"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="3dp"
+                android:elevation="10dp"
+                android:text="Nghệ Sĩ"
+                android:textColor="#E3D91A"
+                android:textSize="12sp"
+                android:textStyle="italic|bold" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/nameCasi"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="68dp"
+            android:elevation="10dp"
+            android:text="Tên Ca Sĩ"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            app:srcCompat="@drawable/playlibrary_svg_image"
+            android:background="@android:color/transparent"
+            android:elevation="10dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginTop="72dp">
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/categoryNhac"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Love Song"
+        android:textStyle="bold"
+        android:textSize="13dp">
+    </TextView>
+
+
+</LinearLayout>

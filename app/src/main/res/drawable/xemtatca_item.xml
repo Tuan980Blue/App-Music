@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+    <solid android:color="#EAE3E3" /> <!-- Thay @color/your_color_here bằng màu bạn muốn -->
+    <size
+        android:width="120dp"
+    android:height="10dp" />
+</shape>
